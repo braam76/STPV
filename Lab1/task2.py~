@@ -1,0 +1,12 @@
+import math
+
+t = int(input("Введите t: "))
+x = int(input("Введите x: "))
+
+numerator = 5 * math.pi * t + 10 * math.cos(x)
+
+denominator = math.sqrt(t) - math.abs(math.sin(t))
+
+result = (numerator / denominator) * math.exp(x)
+
+print(f"Результат: {result}")
